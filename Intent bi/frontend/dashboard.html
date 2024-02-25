@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dashboard</h1>
+      <div class="sorting-container">
+        <label for="sort-dropdown">Sort By:</label>
+        <select id="sort-dropdown">
+          <option value="date">Date</option>
+          <option value="market">Market</option>
+          <option value="country">Country</option>
+          <option value="product">Product</option>
+          <option value="unitsSold">Units Sold</option>
+          <option value="manufacturingPrice">Manufacturing Price</option>
+          <option value="salePrice">Sale Price</option>
+          <option value="grossSales">Gross Sales</option>
+          <option value="sales">Sales</option>
+          <option value="cogs">COGS</option>
+          <option value="profit">Profit</option>
+          <option value="monthNumber">Month Number</option>
+          <option value="monthName">Month Name</option>
+          <option value="year">Year</option>
+        </select>
+      </div>
+
+      <div class="ordering-container">
+        <label for="order-dropdown">Order:</label>
+        <select id="order-dropdown">
+          <option value="asc">Ascending</option>
+          <option value="desc">Descending</option>
+        </select>
+      </div>
+
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>SR NO</th>
+            <th>Market</th>
+            <th>Country</th>
+            <th>Product</th>
+            <th>Discount Band</th>
+            <th>Units Sold</th>
+            <th>Manufacturing Price</th>
+            <th>Sale Price</th>
+            <th>Gross Sales</th>
+            <th>Sales</th>
+            <th>COGS</th>
+            <th>Profit</th>
+            <th>Date</th>
+            <th>Month Number</th>
+            <th>Month Name</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <h1></h1>
+        </tbody>
+      </table>
+      <div id="pagination-container"></div>
+    </div>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>
